@@ -1,0 +1,41 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #ccc;
+}
+.header{
+  height: 50px;
+  background-color: #ff0000;
+}
+.slider{
+  flex: 1;
+  overflow: hidden;
+ 
+}
+.slider-container{
+  height: 100%;
+  display: flex;
+  width: calc(100vw * 3);
+  transition: all ease 0.3s;
+}
+.slider-item{
+width: 100vw;
+height: inherit;
+background-size: cover;
+background-position: 100% 100%;
+}
+.item1{
+  background-image: url("../images/1.jpg");
+}
+.item2{
+  background-image: url("../images/2.jpg");
+}
+.item3{
+  background-image: url("../images/3.jpg");
+}
