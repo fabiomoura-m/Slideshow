@@ -11,7 +11,13 @@ header{
 }
 .header{
   height: 50px;
-  background-color: #ff0000;
+  background: linear-gradient(to right, rgb(27, 129, 107), rgb(167, 199, 94));
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 23px;
+  
 }
 .slider{
   flex: 1;
@@ -20,22 +26,28 @@ header{
 .slider-container{
   height: 100%;
   display: flex;
-  transition: all ease 0.3s;
+  transition: all ease 0.4s;
 }
 .slider-item{
 width: 100vw;
 height: inherit;
 background-size: cover;
 background-position: 100% 100%;
+/* display: flex;
+justify-content: center;
+color: #fff;
+text-shadow: 0 1px 1px #333;
+font-size: 30px;
+*/
 }
 .item1{
-  background-image: url("../images/1.jpg");
+  background-image: url("../images/img1.jpg");
 }
 .item2{
-  background-image: url("../images/2.jpg");
+  background-image: url("../images/img2.jpg");
 }
 .item3{
-  background-image: url("../images/3.jpg");
+  background-image: url("../images/img3.jpg");
 }
 .slider-controls{
   position: absolute;
@@ -52,4 +64,16 @@ background-position: 100% 100%;
   border-radius: 50%;
   cursor: pointer;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ccc;
+  opacity: 0.5;
+  transition: all 0.5s ease;
+}
+.slider-control img{
+  width: 30px;
+}
+.slider-control:hover{
+  opacity: 1;
 }

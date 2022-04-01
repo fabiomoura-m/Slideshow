@@ -25,9 +25,11 @@ function goNext() {
 }
 
 function updateMargin() {
-  let widthClient = document.body.clientWidth;
-  let newMargin = currentSlide * widthClient;
+  let sliderItemWidth = document.querySelector('.slider-item').clientWidth;
+  let newMargin = currentSlide * sliderItemWidth;
   document.querySelector(
     '.slider-container'
   ).style.marginLeft = `-${newMargin}px`;
 }
+
+setInterval(goNext, 5000);
